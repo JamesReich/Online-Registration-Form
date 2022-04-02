@@ -12,6 +12,7 @@ body{
 
 header{
 
+
     margin: -8px -8px 10px -8px;
     background-color: rgb(23, 29, 48);
     color: white;
@@ -23,6 +24,14 @@ header h1{
     margin: -8px -8px 10px -8px;
     padding: 5% 2%;
     text-align: center;
+
+}
+
+.call-to-action{
+
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 20px;
 
 }
 
