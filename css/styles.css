@@ -23,9 +23,11 @@ header h1{
 
     margin: -8px -8px 10px -8px;
     padding: 5% 2%;
+    font-size: 20px;
     text-align: center;
 
 }
+
 
 .call-to-action{
 
@@ -38,7 +40,7 @@ header h1{
 form {
 max-width: 300px;
 margin: 0% auto;
-background: #ffffff;
+
 }
 
 input[type="text"],
@@ -51,9 +53,9 @@ select {
 
     border: none;
     padding: 15px 10px;
-    background: rgba(236, 236, 236, 0.7);
+    background: rgb(230, 230, 230);
     max-width: 100%;
-    width: 230px;
+    width: 250px;
     margin: 2%;
     height: auto;
     border-radius: 5px;
@@ -62,7 +64,7 @@ select {
 
 select {
 
-width: 250px;
+width: 270px;
 padding: 6px;
 height: 40px;
 border-radius: 5px;
@@ -99,17 +101,42 @@ button{
 
 }
 
+
 label{
 
     padding-top: 10px;
-    padding-left: 10px;
-    display: flex;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    display: block;
+
+}
+
+.c-boxes{
+
+    display: inline;
+    
+
+}
+
+.newsletter-header{
+
+    border-top: 2px solid black;
+    width: 95%;
+    margin: 20px auto;
+
+}
+
+.form-header-bar{
+
+    border-bottom: 5px double black;
+    width: 95%;
+    margin: 10px auto;
 
 }
 
 #zip{
 
-    width: 30%;
+    width: 135px;
 
 }
 
@@ -141,4 +168,67 @@ legend{
 
 
 
+@media screen and (min-width: 720px){
+    
+form {
 
+    max-width: 700px;
+    margin: 0% auto;
+
+}
+
+.form-container{
+
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+    border: none;
+    padding: 15px 10px;
+    background: rgb(230, 230, 230);
+    max-width: 100%;
+    width: 500px;
+    margin: 2%;
+    height: auto;
+    border-radius: 5px;
+    align-self: flex-end;
+
+}
+
+select {
+
+    width: 520px;
+    padding: 6px;
+    height: 40px;
+    border-radius: 5px;
+
+}
+
+#zip{
+
+    width: 150px;
+
+}
+
+
+
+label{
+
+    align-self: flex-start;
+    order: -1;
+
+}
+
+
+
+    
+}
