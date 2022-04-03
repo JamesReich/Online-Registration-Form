@@ -182,6 +182,12 @@ select:focus{
 
 }
 
+select option:nth-of-type(odd){
+
+    background-color: #b8e3e6;
+
+}
+
 fieldset {
 
     
