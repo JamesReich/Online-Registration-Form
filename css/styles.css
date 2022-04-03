@@ -1,7 +1,7 @@
 body{
 
     font-family: 'Signika Negative', sans-serif;
-    background-color: rgb(243, 243, 243);
+    background-color: #457b9d;
     color: #2d2e35;
     line-height: 1.6;
     max-width: 1600px;
@@ -12,10 +12,9 @@ body{
 
 header{
 
-
-    margin: -8px -8px 10px -8px;
-    background-color: rgb(23, 29, 48);
-    color: white;
+    width: 100%;
+    background-color: #1d3557;
+    color: #f1faee;
 
 }
 
@@ -24,6 +23,7 @@ header h1{
     margin: -8px -8px 10px -8px;
     padding: 5% 2%;
     font-size: 20px;
+    color: #f1faee;
     text-align: center;
 
 }
@@ -34,12 +34,16 @@ header h1{
     text-align: center;
     line-height: 1.5rem;
     padding: 20px;
+    color: #f1faee;
 
 }
 
 form {
-max-width: 300px;
-margin: 0% auto;
+
+    background-color: #f1faee;
+    border-radius: 5px;
+    max-width: 300px;
+    margin: 0% auto;
 
 }
 
@@ -53,12 +57,21 @@ select {
 
     border: none;
     padding: 15px 10px;
-    background: rgb(230, 230, 230);
+    background: rgb(205, 208, 216);
     max-width: 100%;
     width: 250px;
     margin: 2%;
     height: auto;
     border-radius: 5px;
+
+}
+
+#name::placeholder, #mail::placeholder{
+
+    font-size: 13px;
+    text-align: right;
+    color: rgb(98, 99, 102);
+    
 
 }
 
@@ -92,10 +105,11 @@ button{
     border: 1px solid rgb(52, 134, 139);
     box-shadow: 0 1px 3px rgba(7, 7, 7, 0.2) ;
     border-radius: 5px;
-    color: white;
+    color: #f1faee;
     font-size: 1.5em;
+    font-weight: 700;
     width: 90%;
-    margin: 1% auto;
+    margin: 5% auto;
     padding: 10px;
 
 
@@ -120,7 +134,7 @@ label{
 
 .newsletter-header{
 
-    border-top: 2px solid black;
+    border-top: 2px solid #1d3557;
     width: 95%;
     margin: 20px auto;
 
@@ -128,8 +142,8 @@ label{
 
 .form-header-bar{
 
-    border-bottom: 5px double black;
-    width: 95%;
+    border-bottom: 5px double #1d3557;
+    width: 100%;
     margin: 10px auto;
 
 }
@@ -144,6 +158,27 @@ input[type="radio"],
 input[type="checkbox"] {
 
  margin: 1% 2%;
+
+}
+
+input:focus{
+
+
+    outline: none;
+    transition: ease-in 0.5s;
+    background: #c3eef0;
+    border: 1px solid #94afb1;
+    color: rgb(37, 37, 37);
+
+
+}
+select:focus{
+
+    outline: none;
+    transition: ease-in 0.5s;
+    background: #c3eef0;
+    border: 1px solid #94afb1;
+    color: rgb(37, 37, 37);
 
 }
 
@@ -166,10 +201,49 @@ legend{
 
 }
 
+footer{
+
+    color: #d9dad8;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 2%;
+    text-align: center;
+
+}
+
 
 
 @media screen and (min-width: 720px){
     
+
+.header-container{
+
+margin: 0px auto;
+
+}
+header{
+
+    width: 100%;
+    background-color: rgb(23, 29, 48);
+    color: white;
+
+}
+
+header h1{
+
+    padding: 5% 2%;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.newsletter-header{
+
+    width: 100%;
+
+
+}
+
 form {
 
     max-width: 700px;
@@ -210,6 +284,27 @@ select {
     padding: 6px;
     height: 40px;
     border-radius: 5px;
+ 
+}
+
+input:focus{
+
+
+    outline: none;
+    transition: ease-in 0.5s;
+    background: #c3eef0;
+    border: 1px solid #94afb1;
+    color: rgb(37, 37, 37);
+
+
+}
+select:focus{
+
+    outline: none;
+    transition: ease-in 0.5s;
+    background: #c3eef0;
+    border: 1px solid #94afb1;
+    color: rgb(37, 37, 37);
 
 }
 
@@ -221,13 +316,21 @@ select {
 
 
 
-label{
+.info-label{
 
-    align-self: flex-start;
-    order: -1;
+    padding-top: 25px;
+    display: inline-block;
+    width: 100px;
 
 }
 
+textarea{
+
+    margin-top: 20px;
+    width: 100%;
+    height: 60px;
+
+}
 
 
     
