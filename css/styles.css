@@ -150,7 +150,7 @@ label{
 
 #zip{
 
-    width: 135px;
+    width: 50%;
 
 }
 
@@ -161,7 +161,7 @@ input[type="checkbox"] {
 
 }
 
-input:focus{
+input:focus, select:focus, textarea:focus{
 
 
     outline: none;
@@ -172,15 +172,7 @@ input:focus{
 
 
 }
-select:focus{
 
-    outline: none;
-    transition: ease-in 0.5s;
-    background: #c3eef0;
-    border: 1px solid #94afb1;
-    color: rgb(37, 37, 37);
-
-}
 
 select option:nth-of-type(odd){
 
@@ -219,7 +211,7 @@ footer{
 
 
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 768px){
     
 
 .header-container{
@@ -293,7 +285,7 @@ select {
  
 }
 
-input:focus{
+input:focus, select:focus, textarea:focus{
 
 
     outline: none;
@@ -302,21 +294,12 @@ input:focus{
     border: 1px solid #94afb1;
     color: rgb(37, 37, 37);
 
-
-}
-select:focus{
-
-    outline: none;
-    transition: ease-in 0.5s;
-    background: #c3eef0;
-    border: 1px solid #94afb1;
-    color: rgb(37, 37, 37);
 
 }
 
 #zip{
 
-    width: 150px;
+    width: 25%;
 
 }
 
